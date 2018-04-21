@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/icons-extra.css">
+    <style>
+        /*头部*/
+
+        .mui-pull-left {
+            overflow: hidden;
+        }
+
+        .mui-bar {
+            background-color: #006699;
+            overflow: hidden;
+        }
+
+        .mui-bar h1 {
+            color: #fff;
+        }
+
+        main {
+            margin-top: 60px;
+            padding: 0 10px;
+        }
+        .code {
+            width:100%
+        }
+        .renzheng {
+            float:left;
+            width: 60%;
+        }
+        .huoqu {
+            float:right;
+            width:40%;
+            height: 40px;
+            padding-left:18px;
+        }
+        .huoqu input.ma {
+            width:100%;
+            height: 100%;
+            background-color: #007aff;
+            color:#fff;
+        }
+        input.end {
+            margin-top:35px;
+            width: 100%;
+            background-color: #007aff;
+            color:#fff;
+            height: 40px;
+        }
+        
+        /* 底部 */
+
+        .mui-bar-tab .mui-tab-item .mui-icon {
+            top: 0;
+        }
+
+        .mui-tab-label {
+            color: #fff;
+        }
+
+        .mui-icon {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- 顶部登录 -->
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-arrowthinleft" style=font-weight:700;></a>
+        <h1 class="mui-title">修改密码</h1>
+    </header>
+    <!-- 中部 -->
+    <main>
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="原密码">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="新密码">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <div class="mui-input-row mui-password">
+            <input type="password" class="mui-input-password" data-input-password="3" placeholder="确认新密码">
+            <span class="mui-icon mui-icon-eye"></span>
+        </div>
+        <!-- 获取认证码 -->
+        <div class="code">
+            <div class="renzheng">
+                <input type="text" placeholder="认证码">
+            </div>
+            <div class="huoqu">
+                <input class="ma" type="button" value="获取认证码">
+            </div>
+        </div>
+        <input class="end" type="button" value="确认修改">
+    </main>
+    <!-- 底部导航 -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person-filled"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</body>
+
+</html>

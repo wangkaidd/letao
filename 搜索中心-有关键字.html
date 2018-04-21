@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <link rel="stylesheet" href="./css/icons-extra.css">
+    <style>
+/*头部*/
+.mui-pull-left {
+  overflow: hidden;
+}
+.mui-bar {
+  background-color: #006699;
+  overflow: hidden;
+}
+.mui-bar h1 {
+  color: #fff;
+}
+/* 中部 */
+.main-search {
+  margin-top:54px;
+  padding:0 10px;
+  
+}
+.main-search-button {
+  position:relative;
+  width: 100%;
+  height: 28px;
+  border-radius:3px;
+  border:1px solid #006699;
+  overflow: hidden;
+}
+.main-search-button input {
+  float:left;
+  height:28px;
+  outline-style: none;
+  border:none;
+}
+.main-search-button input:first-child {
+  padding-left:12px;
+  font-size:14px;
+  border-radius:0;
+}
+.main-search-button input:last-child {
+  position:absolute;
+  right:0;
+  top:0;
+  height:28px;
+  background-color: #006699;
+  color:#fff;
+  font-size:16px;
+  border-radius:0;
+}
+
+.main-search-text {
+  height:40px;
+  line-height:40px;
+  color:#666;
+}
+.main-search-text span:first-child {
+  float:left;
+}
+.main-search-text span:first-child {
+  float:right;
+}
+/* 底部 */
+.mui-bar-tab .mui-tab-item .mui-icon {
+  top: 0;
+}
+.mui-tab-label {
+  color: #fff;
+}
+.mui-icon {
+  color: #fff;
+  font-weight: 500;
+}
+
+    </style>
+</head>
+<body>
+    <!-- 顶部登录 -->
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-arrowthinleft" style=font-weight:700;></a>
+        <h1 class="mui-title">搜索中心</h1>
+    </header>
+    <!-- 中部 -->
+    <main class="main-search">
+      <div class="main-search-button">
+        <input type="text" placeholder="搜索你喜欢的商品">
+        <input type="button" value="搜索">
+      </div>
+      <div class="main-search-text">
+        <span>搜索历史</span><span>清空记录</span>
+      </div>
+      <div>
+        <input type="text" placeholder="nike">
+      </div>
+    </main>
+    <!-- 底部导航 -->
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item mui-active" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person-filled"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</body>
+</html>
